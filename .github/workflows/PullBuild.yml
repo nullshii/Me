@@ -1,4 +1,4 @@
-name: Github Pages
+name: Pull Request Build Test
 
 on:
   pull_request:
@@ -22,9 +22,3 @@ jobs:
         run: |
           npm i
           npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: build
